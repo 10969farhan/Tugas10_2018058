@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_alarm"
+        android:icon="@drawable/ic_baseline_notifications_active_24"
+        android:title="Alarm Page" />
+    <item
+        android:id="@+id/nav_add"
+        android:icon="@drawable/ic_baseline_add_task_24"
+        android:title="Add New Item" />
+    <item
+        android:id="@+id/nav_restapi"
+        android:icon="@drawable/ic_baseline_api_24"
+        android:title="Rest Api" />
+    <item
+    android:id="@+id/nav_logout"
+    android:icon="@drawable/ic_baseline_power_settings_new_24"
+    android:title="Log Out" />
+</group>
+</menu>

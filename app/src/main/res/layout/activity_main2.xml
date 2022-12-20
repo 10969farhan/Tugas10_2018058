@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2"
+    android:background="#8fa3ae">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/dl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+            <TextClock
+                android:id="@+id/selectedTime"
+                android:text="Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/russo_one"
+                android:format24Hour="hh:mm:ss"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="46dp" />
+
+            <Button
+                android:id="@+id/selectedTimeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="26dp"
+                android:layout_marginTop="36dp"
+                android:backgroundTint="#D1D1D1"
+                android:fontFamily="sans-serif-light"
+                android:text="Select Time"
+                android:textColor="#000000"
+                android:textSize="26dp" />
+            <Button
+                android:id="@+id/setAlarmBtn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginHorizontal="26dp"
+                android:backgroundTint="#D1D1D1"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#000000"
+                android:text="Set Alarm"
+                android:textSize="26dp"/>
+            <Button
+                android:id="@+id/cancelAlarmBtn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginHorizontal="26dp"
+                android:backgroundTint="#D1D1D1"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#000000"
+                android:text="Cancel Alarm"
+                android:textSize="26dp"/>
+
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/navigation_header"
+            app:menu="@menu/navigation_menu">
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
